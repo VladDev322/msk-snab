@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'SFProDisplay';
-  src: url('/sourse/fonts/SFPRODISPLAYREGULAR.OTF');
+  font-family: "SFProDisplay";
+  src: url("/sourse/fonts/SFPRODISPLAYREGULAR.OTF");
   font-weight: normal;
   font-style: normal;
 }
-
 body {
-  font-family: 'SFProDisplay';
+  font-family: "SFProDisplay";
 }
 
 * {
@@ -30,35 +29,29 @@ body {
 
 .header {
   padding-top: 10px;
-
-  &__container {
-    width: 100%;
-  }
-  
-  &__upper {
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #EAEDF0;
-    padding-bottom: 8px;
-  }
-
-  &__bottom {
-    padding-top: 10px;
-  }
-
-  &__button {
-    background-color: #fce0e1;
-    padding: 5px 10px;
-    border-radius: 4px;
-  }
-
-  &__block {
-    margin-right: 40px;
-  }
-
-  &__arrow {
-    margin-left: 10px;
-  }
+}
+.header__container {
+  width: 100%;
+}
+.header__upper {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EAEDF0;
+  padding-bottom: 8px;
+}
+.header__bottom {
+  padding-top: 10px;
+}
+.header__button {
+  background-color: #fce0e1;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+.header__block {
+  margin-right: 40px;
+}
+.header__arrow {
+  margin-left: 10px;
 }
 
 .header__container {
@@ -80,4 +73,4 @@ body {
   height: 1px;
   width: 100vw;
   background-color: #EAEDF0;
-}
+}/*# sourceMappingURL=style.css.map */
