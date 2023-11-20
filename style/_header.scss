@@ -1,0 +1,146 @@
+.header,
+.header__upper,
+.header__bottom,
+.header__link,
+.header__block {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding-top: 10px;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__upper {
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAEDF0;
+    padding-bottom: 8px;
+  }
+
+  &__bottom {
+    padding-top: 10px;
+  }
+
+  &__button {
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  &__block {
+    margin-right: 40px;
+  }
+
+  &__arrow {
+    margin-left: 10px;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.logo-btn {
+  margin-right: 100px;
+}
+
+
+.stripe {
+  margin-top: 10px;
+  height: 1px;
+  width: 100vw;
+  background-color: #EAEDF0;
+}
+
+.search {
+  margin-top: 40px;
+  font-size: 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__catalog-btn {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    width: 23%;
+    padding: 12px 15px;
+    border-radius: 4px;
+  }
+
+  &__catalog-text {
+    justify-self: start;
+  }
+
+  &__input {
+    font-size: 17px;
+    width: 46%;
+    background: url(/sourse/svg/search.svg) no-repeat scroll 7px 12px;
+    background-size: 20px;
+    border: 1px solid #aeaeae;
+    border-radius: 4px;
+    padding-left: 50px;
+
+    &:focus {
+      outline: 2px solid $pink-color;
+    }
+  }
+
+  &__find-btn {
+    width: 12%;
+    padding: 12px 0px;
+    border-radius: 4px;
+    text-align: center;
+    }
+
+  &__basket-btn {
+    display: flex;
+    justify-content: center;
+    padding: 12px 0px;
+    width: 12%;
+    border-radius: 4px;
+  }
+
+  &__basket-icon {
+    margin-right: 3px;
+  }
+}
+
+.red-btn {
+  background: $red-gradient;
+  transition: all 2s;
+
+  &:hover {
+    background: $red-gradient-hover;
+  }
+}
+
+.pink-btn {
+  transition: background-color 0.2s;
+  background: $pink-color;
+
+  &:hover {
+    background: $pink-hover;
+  }
+}
+
+.burger {
+  justify-self: start;
+  margin-right: 30px;
+
+  &__stripe {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 100px;
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 4px;
+    }
+  }
+}

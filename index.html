@@ -5,54 +5,135 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>МегаСтройКомплекс</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <div class="container">
     <header class="header">
-      <img src="sourse/img/logo.png" alt="logo" class="logo">
+      <a href="" class="logo-btn">
+        <img src="sourse/img/logo.png" alt="logo" class="logo">
+      </a>
       <div class="header__container">
         <nav class="header__upper">
-          <div class="header__item">
-            <img src="sourse/svg/phone.svg" alt="phone" class="icon">
-            <p class="header__link">+7 (918) 600 54 68</p>
-          </div>
-          <div class="header__item">
-            <img src="sourse/svg/mail.svg" alt="mail" class="icon">
-            <p class="header__link">msk@msk-snab.com</p>
-          </div>
-          <div class="header__item">
-            <div class="header__button">Заказать звонок</div>
-          </div>
-          <div class="header__item">
-            <img src="sourse/svg/user.svg" alt="user" class="icon">
-            <p class="header__link">Личный кабинет</p>
-          </div>
+          <a href="tel:+7 (918) 600 54 68" class="header__link">
+            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 16"
+              fill="none">
+              <path
+                d="M9.75562 11.3081L11.0156 10.0481C11.1853 9.88051 11.4 9.76578 11.6337 9.71785C11.8673 9.66992 12.1099 9.69086 12.3319 9.77811L13.8675 10.3912C14.0918 10.4823 14.2842 10.6377 14.4203 10.8379C14.5564 11.0381 14.6303 11.2741 14.6325 11.5162V14.3287C14.6312 14.4934 14.5966 14.6561 14.5307 14.8071C14.4649 14.9581 14.3691 15.0941 14.2493 15.2071C14.1295 15.3201 13.9881 15.4077 13.8335 15.4646C13.6789 15.5214 13.5145 15.5465 13.35 15.5381C2.58937 14.8687 0.418116 5.75623 0.00749108 2.26873C-0.0115704 2.09747 0.00584556 1.92412 0.0585932 1.76007C0.111341 1.59602 0.198225 1.445 0.313529 1.31695C0.428833 1.18889 0.569945 1.0867 0.72758 1.01709C0.885215 0.947491 1.0558 0.912051 1.22812 0.913109H3.94499C4.18743 0.913827 4.42412 0.987059 4.6246 1.12339C4.82508 1.25972 4.9802 1.45291 5.06999 1.67811L5.68312 3.21373C5.77326 3.43484 5.79626 3.6776 5.74924 3.91169C5.70222 4.14579 5.58727 4.36084 5.41874 4.52998L4.15874 5.78998C4.15874 5.78998 4.88437 10.7006 9.75562 11.3081Z"
+                fill="#FC7272" />
+            </svg>
+            <p class="header__text">+7 (918) 600 54 68</p>
+          </a>
+          <a href="mailto:msk@msk-snab.com" class="header__link">
+            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16"
+              fill="none">
+              <path
+                d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 14C0 15.1 0.9 16 2 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 4L10 9L2 4V2L10 7L18 2V4Z"
+                fill="#FC7272" />
+            </svg>
+            <p class="header__text">msk@msk-snab.com</p>
+          </a>
+          <a href="" class="header__link">
+            <div class="header__button pink-btn">Заказать звонок</div>
+          </a>
+          <a href="" class="header__link">
+            <svg class="header__icon" xmlns="http://www.w3.org/2000/svg" width="15" height="18" viewBox="0 0 15 18"
+              fill="none">
+              <g clip-path="url(#clip0_116_890)">
+                <path opacity="0.5"
+                  d="M7.5 9C8.63664 9 9.72673 8.52589 10.5305 7.68198C11.3342 6.83807 11.7857 5.69347 11.7857 4.5C11.7857 3.30653 11.3342 2.16193 10.5305 1.31802C9.72673 0.474106 8.63664 0 7.5 0C6.36336 0 5.27327 0.474106 4.46954 1.31802C3.66581 2.16193 3.21429 3.30653 3.21429 4.5C3.21429 5.69347 3.66581 6.83807 4.46954 7.68198C5.27327 8.52589 6.36336 9 7.5 9ZM5.96987 10.6875C2.67188 10.6875 0 13.493 0 16.9559C0 17.5324 0.445313 18 0.99442 18H14.0056C14.5547 18 15 17.5324 15 16.9559C15 13.493 12.3281 10.6875 9.03013 10.6875H5.96987Z"
+                  fill="#F22127" />
+              </g>
+              <defs>
+                <clipPath id="clip0_116_890">
+                  <rect width="15" height="18" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="header__text">Личный кабинет</p>
+          </a>
         </nav>
         <nav class="header__bottom">
-          <div class="header__block">
+          <a href="" class="header__block">
             <p class="header__text">Компания</p>
-            <img src="sourse/svg/arrow.svg" alt="arrow" class="header__arrow">
-          </div>
-          <div class="header__block">
+            <svg class="header__arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 9"
+              fill="none">
+              <path d="M1 1L7.96133 4.5L1 8" stroke="#2B3139" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="" class="header__block">
             <p class="header__text">Партнеры</p>
-          </div>
-          <div class="header__block">
+          </a>
+          <a href="" class="header__block">
             <p class="header__text">Услуги</p>
-            <img src="sourse/svg/arrow.svg" alt="arrow" class="header__arrow">
-          </div>
-          <div class="header__block">
+            <svg class="header__arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="12" viewBox="0 0 9 9"
+              fill="none">
+              <path d="M1 1L7.96133 4.5L1 8" stroke="#2B3139" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="" class="header__block">
             <p class="header__text">Контакты</p>
-          </div>
-          <div class="header__block">
+          </a>
+          <a href="" class="header__block">
             <p class="header__text">Каталог</p>
-          </div>
+          </a>
         </nav>
       </div>
     </header>
   </div>
   <div class="stripe"></div>
+  <section class="search">
+    <div class="container search__container">
+      <a href="" class="search__catalog-btn red-btn">
+        <div class="burger">
+          <div class="burger__stripe"></div>
+          <div class="burger__stripe"></div>
+          <div class="burger__stripe"></div>
+        </div>
+        <p class="search__catalog-text">КАТАЛОГ</p>
+      </a>
+      <input type="text" class="search__input" placeholder="Поиск по бренду, названию или артикулу">
+      <a href="" class="search__find-btn red-btn">Найти</a>
+      <a href="" class="search__basket-btn pink-btn">
+        <svg class="search__backet-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="26" viewBox="0 0 30 26"
+          fill="none">
+          <path
+            d="M14.7134 4.30248C14.9358 3.86458 14.7681 3.3265 14.3415 3.10013C13.915 2.87376 13.3827 3.04446 13.1603 3.47865L9.76602 10.125H6.64518C5.99987 10.125 5.47852 10.6556 5.47852 11.3125C5.47852 11.9693 5.99987 12.5 6.64518 12.5L8.53737 20.2002C8.79622 21.2578 9.72956 22 10.8014 22H21.1556C22.2275 22 23.1608 21.2578 23.4197 20.2002L25.3118 12.5C25.9572 12.5 26.4785 11.9693 26.4785 11.3125C26.4785 10.6556 25.9572 10.125 25.3118 10.125H22.191L18.7967 3.47865C18.5743 3.04446 18.0457 2.87376 17.6155 3.10013C17.1853 3.3265 17.0212 3.86458 17.2436 4.30248L20.2186 10.125H11.7384L14.7134 4.30248ZM12.4785 14.2812V17.8437C12.4785 18.1703 12.216 18.4375 11.8952 18.4375C11.5743 18.4375 11.3118 18.1703 11.3118 17.8437V14.2812C11.3118 13.9547 11.5743 13.6875 11.8952 13.6875C12.216 13.6875 12.4785 13.9547 12.4785 14.2812ZM15.9785 13.6875C16.2993 13.6875 16.5618 13.9547 16.5618 14.2812V17.8437C16.5618 18.1703 16.2993 18.4375 15.9785 18.4375C15.6577 18.4375 15.3952 18.1703 15.3952 17.8437V14.2812C15.3952 13.9547 15.6577 13.6875 15.9785 13.6875ZM20.6452 14.2812V17.8437C20.6452 18.1703 20.3827 18.4375 20.0618 18.4375C19.741 18.4375 19.4785 18.1703 19.4785 17.8437V14.2812C19.4785 13.9547 19.741 13.6875 20.0618 13.6875C20.3827 13.6875 20.6452 13.9547 20.6452 14.2812Z"
+            fill="black" />
+        </svg>
+        Корзина
+      </a>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- If we need scrollbar -->
+
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/swiper.js" type="module"></script>
 </body>
 
 </html>

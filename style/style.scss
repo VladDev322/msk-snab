@@ -1,3 +1,16 @@
+$pink-color: #fce0e1;
+$pink-hover: #fcc0c2;
+$red-gradient: linear-gradient(-180deg, rgba(255,133,113,1) 0%, rgba(237,34,40,1) 100%);
+$red-gradient-hover: linear-gradient(-180deg, rgba(255,133,113,1) 0%, rgba(247,87,79,1) 75%, rgba(237,34,40,1) 100%);
+
+
+
+@import '_header.scss';
+
+// * {
+//   outline: 1px solid red;
+// }
+
 @font-face {
   font-family: 'SFProDisplay';
   src: url('/sourse/fonts/SFPRODISPLAYREGULAR.OTF');
@@ -7,6 +20,8 @@
 
 body {
   font-family: 'SFProDisplay';
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
@@ -15,69 +30,19 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .container {
-  max-width: 1120px;
+  padding: 0 10px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
-.header,
-.header__upper,
-.header__bottom,
-.header__item,
-.header__block {
-  display: flex;
-}
-
-.header {
-  padding-top: 10px;
-
-  &__container {
-    width: 100%;
-  }
-  
-  &__upper {
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #EAEDF0;
-    padding-bottom: 8px;
-  }
-
-  &__bottom {
-    padding-top: 10px;
-  }
-
-  &__button {
-    background-color: #fce0e1;
-    padding: 5px 10px;
-    border-radius: 4px;
-  }
-
-  &__block {
-    margin-right: 40px;
-  }
-
-  &__arrow {
-    margin-left: 10px;
-  }
-}
-
-.header__container {
+.swiper {
+  margin-top: 40px;
   width: 100%;
-}
-
-.logo {
-  margin-right: 100px;
-}
-
-.icon {
-  margin-right: 10px;
-  width: 15px;
-  height: 15px;
-}
-
-.stripe {
-  margin-top: 10px;
-  height: 1px;
-  width: 100vw;
-  background-color: #EAEDF0;
+  height: 400px;
 }
