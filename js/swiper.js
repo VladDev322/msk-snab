@@ -31,19 +31,19 @@ const swiper2 = new Swiper('.swiper-2', {
   },
 });
 
-// const swiper3 = new Swiper('.swiper-3', {
-//   direction: 'horizontal',
-//   loop: true,
+const swiper3 = new Swiper('.swiper-3', {
+  direction: 'horizontal',
+  loop: true,
 
-//   navigation: {
-//     nextEl: '.swiper-button-next-3',
-//     prevEl: '.swiper-button-prev-3',
-//   },
+  navigation: {
+    nextEl: '.swiper-button-next-3',
+    prevEl: '.swiper-button-prev-3',
+  },
 
-//   slidesPerView: 4,
-//   spaceBetween: 10,
+  slidesPerView: 3,
+  spaceBetween: 10,
 
-//   autoplay: {
-//     delay: 3000,
-//   },
-// });
+  autoplay: {
+    delay: 3000,
+  },
+});

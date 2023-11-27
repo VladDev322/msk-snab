@@ -21,8 +21,8 @@
   bottom: 15px; 
 }
 
-.swiper-button-prev-2,
-.swiper-button-next-2 {
+.left-arrow,
+.right-arrow {
   position: absolute;
   top: 60%;
   width: 60px;
@@ -33,11 +33,11 @@
   background-image: url("../sourse/svg/left-arrow.svg") !important;
 }
 
-.swiper-button-prev-2 {
+.left-arrow {
   left: -82px;
 }
 
-.swiper-button-next-2 {
+.right-arrow {
   transform: rotate(180deg);
   right: -82px;
 }

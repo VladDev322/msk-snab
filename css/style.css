@@ -147,8 +147,8 @@
   bottom: 15px;
 }
 
-.swiper-button-prev-2,
-.swiper-button-next-2 {
+.left-arrow,
+.right-arrow {
   position: absolute;
   top: 60%;
   width: 60px;
@@ -159,11 +159,11 @@
   background-image: url("../sourse/svg/left-arrow.svg") !important;
 }
 
-.swiper-button-prev-2 {
+.left-arrow {
   left: -82px;
 }
 
-.swiper-button-next-2 {
+.right-arrow {
   transform: rotate(180deg);
   right: -82px;
 }
@@ -178,6 +178,7 @@ body {
   font-family: "SFProDisplay";
   font-weight: normal;
   font-style: normal;
+  line-height: normal;
 }
 
 * {
@@ -199,7 +200,7 @@ a {
 }
 
 .subtitle {
-  color: #2B3139;
+  color: #2b3139;
   text-align: center;
   font-family: Buyan;
   font-size: 52px;
@@ -208,7 +209,7 @@ a {
 
 .subtext {
   margin-top: 10px;
-  color: #2B3139;
+  color: #2b3139;
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -233,4 +234,72 @@ a {
 .categories__text {
   margin-top: 25px;
   text-align: center;
+}
+
+.popular {
+  padding: 30px 0px;
+  color: #2b3139;
+}
+.popular__link {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  padding: 15px 20px;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.12);
+}
+.popular__name {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C4C4C4;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.popular__text {
+  opacity: 0.8;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+.popular__pricebar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.popular__new-price, .popular__old-price {
+  font-family: Buyan;
+  line-height: 130%;
+  /* 54.6px */
+}
+.popular__new-price {
+  font-size: 42px;
+}
+.popular__old-price {
+  opacity: 0.6;
+  font-size: 32px;
+  text-decoration: line-through;
+}
+.popular__buy-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 18px;
+  border-radius: 20px;
+  background-color: #F2584F;
+  transition: background-color 0.2s;
+}
+.popular__buy-btn:hover {
+  background-color: #f54b42;
+}
+.popular__basket-text {
+  margin-left: 15px;
+  color: #FFF;
+  text-align: center;
+  font-family: SF Pro Display;
+  font-size: 20px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
