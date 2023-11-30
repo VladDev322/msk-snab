@@ -59,13 +59,16 @@ a {
   font-weight: 400;
 }
 
+.gray-background {
+  background: #EFF2F5;
+}
+
 .slider {
   padding-bottom: 50px;
 }
 
 .categories {
   padding: 30px 0;
-  background: #EFF2F5;
   ;
 
   &__link {
@@ -84,11 +87,12 @@ a {
 }
 
 .popular {
-  padding: 30px 0px;
+  padding: 30px 0px 5px 0px;
   color: $black-color;
 
   &__link {
     margin-top: 5px;
+    margin-bottom: 25px;
     display: flex;
     flex-direction: column;
     max-width: 340px;
@@ -96,6 +100,11 @@ a {
     border-radius: 20px;
     background: #FFF;
     box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__img {
+    width: 75%;
+    align-self: center;
   }
 
   &__name {
@@ -160,5 +169,118 @@ a {
     font-family: SF Pro Display;
     font-size: 20px;
     font-weight: 500;
+  }
+}
+
+.service {
+  padding: 30px 0px;
+
+  &__container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    // max-width: 532px;
+    padding: 8px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__info {
+    margin-left: 23px;
+  }
+
+  &__name {
+    color: $black-color;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__description {
+    margin-top: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: $black-color;
+    opacity: 0.6;
+  }
+
+  &__link {
+    display: block;
+    margin-top: 50px;
+    color: #F2584F;
+    font-weight: 500;
+  }
+}
+
+.consult {
+  padding: 30px 0px;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px;
+    max-width: 335px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 5px 4px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  &__title {
+    color: $black-color;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  &__text {
+    margin-top: 30px;
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__input {
+    margin-top: 8px;
+    padding: 15px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 16px;
+    fill: #FFF;
+    border: 1px solid #959595;
+
+    &:focus {
+      outline: 1px solid $pink-color;
+    }
+  }
+
+  &__btn {
+    margin-top: 40px;
+    padding: 14px 44px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    background: $red-gradient;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background: $red-gradient-hover;
+    }
+  }
+
+  &__description {
+    margin-top: 20px;
+    color: $black-color;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.6;
   }
 }
