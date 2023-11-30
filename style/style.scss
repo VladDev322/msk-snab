@@ -4,16 +4,9 @@ $pink-hover: #fcc0c2;
 $red-gradient: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(237, 34, 40, 1) 100%);
 $red-gradient-hover: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(247, 87, 79, 1) 75%, rgba(237, 34, 40, 1) 100%);
 
-@import '_header.scss';
-@import '_swipers.scss';
-
-// * {
-//   outline: 1px solid red;
-// }
-
 @font-face {
   font-family: 'SFProDisplay';
-  src: url('/sourse/fonts/SFPRODISPLAYREGULAR.OTF');
+  src: url('../sourse/fonts/SFPRODISPLAYREGULAR.OTF');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,6 +23,10 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+@import '_header.scss';
+@import '_swipers.scss';
+
 
 a {
   text-decoration: none;
