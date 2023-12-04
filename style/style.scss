@@ -11,6 +11,13 @@ $red-gradient-hover: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(24
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Buyan';
+  src: url('../sourse/fonts/BuyanBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: 'SFProDisplay';
   font-weight: normal;
@@ -56,14 +63,16 @@ a {
   background: #EFF2F5;
 }
 
+.red-text {
+  color: #ED2228;
+}
+
 .slider {
   padding-bottom: 50px;
 }
 
-@import '_header.scss';
-@import '_swipers.scss';
-@import '_categories.scss';
-@import '_popular.scss';
-@import '_service.scss';
-@import '_consult.scss';
-@import '_footer.scss';
+@import '_header';
+@import 'main/all';
+@import 'about/all';
+@import '_consult';
+@import '_footer';

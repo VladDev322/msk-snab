@@ -34,6 +34,7 @@ const swiper2 = new Swiper('.swiper-2', {
 const swiper3 = new Swiper('.swiper-3', {
   direction: 'horizontal',
   loop: true,
+  centeredSlides: true,
 
   navigation: {
     nextEl: '.swiper-button-next-3',
@@ -41,7 +42,7 @@ const swiper3 = new Swiper('.swiper-3', {
   },
 
   slidesPerView: 3,
-  spaceBetween: 10,
+  spaceBetween: 50,
 
   autoplay: {
     delay: 3000,

@@ -4,6 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Buyan";
+  src: url("../sourse/fonts/BuyanBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "SFProDisplay";
   font-weight: normal;
@@ -47,6 +53,10 @@ a {
 
 .gray-background {
   background: #EFF2F5;
+}
+
+.red-text {
+  color: #ED2228;
 }
 
 .slider {
@@ -228,6 +238,10 @@ a {
   right: -82px;
 }
 
+.swiper-3 {
+  padding: 0px 10px;
+}
+
 .categories {
   padding: 30px 0;
 }
@@ -253,7 +267,6 @@ a {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
-  max-width: 340px;
   padding: 15px 20px;
   border-radius: 20px;
   background: #FFF;
@@ -355,6 +368,44 @@ a {
   margin-top: 50px;
   color: #F2584F;
   font-weight: 500;
+}
+
+.about {
+  padding: 50px 0px;
+}
+.about .text-block {
+  margin-top: 30px;
+}
+.about .text {
+  margin-top: 10px;
+}
+
+.objects {
+  padding: 33px 0px;
+}
+.objects .text {
+  margin-top: 30px;
+}
+.objects__card {
+  max-width: 350px;
+}
+.objects__name {
+  margin-top: 10px;
+  text-align: center;
+}
+.objects__container {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 35px;
+}
+
+.standarts {
+  padding: 50px 0px 25px 0px;
+}
+.standarts .text {
+  margin-top: 32px;
+  text-align: center;
 }
 
 .consult {
