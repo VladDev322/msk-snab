@@ -18,7 +18,7 @@
 
 .swiper-horizontal>.swiper-pagination-bullets {
   position: relative;
-  bottom: 15px; 
+  bottom: 15px;
 }
 
 .left-arrow,
@@ -33,6 +33,13 @@
   background-image: url("../sourse/svg/left-arrow.svg") !important;
 }
 
+.popular {
+  .left-arrow,
+  .right-arrow {
+    top: 50%;
+  }
+}
+
 .left-arrow {
   left: -82px;
 }
@@ -41,4 +48,3 @@
   transform: rotate(180deg);
   right: -82px;
 }
-

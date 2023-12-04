@@ -17,6 +17,11 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header,
 .header__upper,
 .header__bottom,
@@ -178,6 +183,11 @@ body {
   background-image: url("../sourse/svg/left-arrow.svg") !important;
 }
 
+.popular .left-arrow,
+.popular .right-arrow {
+  top: 50%;
+}
+
 .left-arrow {
   left: -82px;
 }
@@ -187,9 +197,62 @@ body {
   right: -82px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.footer {
+  padding: 64px 0px 10px 0px;
+}
+.footer .subtitle,
+.footer .subtext {
+  text-align: left;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  max-width: 360px;
+}
+.footer__block {
+  margin-top: 40px;
+  display: flex;
+}
+.footer__icon-block {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: rgba(237, 34, 40, 0.26);
+}
+.footer__icon {
+  width: 32px;
+  height: 32px;
+}
+.footer__text {
+  margin-left: 20px;
+}
+.footer__text-name {
+  color: #2b3139;
+  font-size: 20px;
+  font-weight: 700;
+}
+.footer__text-descr {
+  margin-top: 3px;
+  color: #2b3139;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+}
+.footer__map {
+  width: 600px;
+  height: 500px;
+  background-color: bisque;
+}
+.footer .copyright {
+  margin-top: 100px;
+  text-align: center;
 }
 
 .container {

@@ -24,14 +24,15 @@ body {
   box-sizing: border-box;
 }
 
-@import '_header.scss';
-@import '_swipers.scss';
-
-
 a {
   text-decoration: none;
   color: black;
 }
+
+@import '_header.scss';
+@import '_swipers.scss';
+@import '_footer.scss';
+
 
 .container {
   position: relative;

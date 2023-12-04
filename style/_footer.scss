@@ -1,0 +1,68 @@
+.footer {
+  padding: 64px 0px 10px 0px;
+
+  .subtitle,
+  .subtext {
+    text-align: left;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 360px;
+  }
+
+  &__block {
+    margin-top: 40px;
+    display: flex;
+  }
+
+  &__icon-block {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    background: rgba(237, 34, 40, 0.26);
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  &__text {
+    margin-left: 20px;
+  }
+
+  &__text-name {
+    color: $black-color;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__text-descr {
+    margin-top: 3px;
+    color: $black-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+  }
+
+  &__map {
+    width: 600px;
+    height: 500px;
+    background-color: bisque;
+  }
+
+  .copyright {
+    margin-top:100px;
+    text-align: center;
+  }
+}
