@@ -1,0 +1,36 @@
+.offices {
+  padding: 33px 0px 57px 0px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    margin-top: 30px;
+    padding: 20px 120px 50px 40px;
+    width: 550px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &__data-block {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__data {
+    margin-left: 10px;
+  }
+
+  &__name {
+    color: #000;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 93.75% */
+    letter-spacing: 0.64px;
+  }
+}

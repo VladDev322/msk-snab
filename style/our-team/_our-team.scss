@@ -1,0 +1,55 @@
+.our-team {
+  padding: 30px 0px;
+
+  .subtitle {
+    margin-top: 35px;
+  } 
+
+  &__card {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__data-block {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    margin-left: 50px;
+  }
+
+  &__data {
+    margin-left: 10px; 
+  }
+
+  &__img {
+    width: 250px;
+    height: 250px;
+  }
+
+  &__position,
+  &__data-block {
+    margin-top: 20px;
+  }
+
+  &__position,
+  &__data {
+    color: $black-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    /* 125% */
+    letter-spacing: 0.48px;
+  }
+
+  &__name {
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    /* 93.75% */
+    letter-spacing: 0.64px;
+  }
+}
