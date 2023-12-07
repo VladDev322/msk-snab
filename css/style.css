@@ -59,6 +59,10 @@ a {
   color: #ED2228;
 }
 
+.page-path {
+  margin-top: 30px;
+}
+
 .slider {
   padding-bottom: 50px;
 }
@@ -371,7 +375,7 @@ a {
 }
 
 .about {
-  padding: 50px 0px;
+  padding-bottom: 50px;
 }
 .about .subtitle {
   margin-top: 35px;
@@ -412,7 +416,7 @@ a {
 }
 
 .our-team {
-  padding: 30px 0px;
+  padding-bottom: 30px;
 }
 .our-team .subtitle {
   margin-top: 35px;
@@ -466,13 +470,15 @@ a {
 .offices__card {
   margin-top: 30px;
   padding: 20px 120px 50px 40px;
-  width: 550px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  max-width: 550px;
   border-radius: 10px;
   background: #FFF;
   box-shadow: 6px 6px 14px 0px rgba(0, 0, 0, 0.12);
 }
 .offices__data-block {
-  margin-top: 42px;
   display: flex;
   align-items: center;
 }
@@ -486,6 +492,99 @@ a {
   line-height: 30px;
   /* 93.75% */
   letter-spacing: 0.64px;
+}
+.offices__location-icon {
+  width: 20px;
+}
+
+.basket .subtitle {
+  margin-top: 35px;
+}
+.basket__product {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid #EAEDF0;
+  border-radius: 12px;
+}
+.basket__product-block {
+  margin-top: 28px;
+}
+.basket img {
+  justify-self: start;
+}
+.basket__name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.28px;
+}
+.basket__price {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.28px;
+}
+.basket__icon-block {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  background: rgba(237, 34, 40, 0.26);
+  cursor: pointer;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.quantity__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border-radius: 5px;
+  outline: 1px solid rgb(199, 199, 199);
+  transform: translateY(15px);
+}
+.quantity__number {
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  font-size: 18px;
+}
+.quantity__minus, .quantity__plus {
+  width: 25%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+.quantity__minus:hover, .quantity__plus:hover {
+  background-color: rgb(171, 171, 171);
+}
+.quantity__minus {
+  border-radius: 5px 0px 0px 5px;
+}
+.quantity__plus {
+  border-radius: 0px 5px 5px 0px;
+}
+.quantity__stock {
+  transform: translateY(20px);
+  color: #A0A0A0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.24px;
 }
 
 .consult {
