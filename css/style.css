@@ -500,8 +500,12 @@ a {
 .basket .subtitle {
   margin-top: 35px;
 }
+.basket__container {
+  margin-top: 28px;
+  display: flex;
+}
 .basket__product {
-  margin-top: 18px;
+  margin-bottom: 18px;
   display: grid;
   grid-template-columns: 2fr 5fr 2fr 3fr 1fr;
   justify-items: center;
@@ -509,13 +513,11 @@ a {
   border: 1px solid #EAEDF0;
   border-radius: 12px;
 }
-.basket__product-block {
-  margin-top: 28px;
-}
 .basket img {
   justify-self: start;
 }
 .basket__name {
+  padding: 10px;
   font-size: 14px;
   font-weight: 400;
   line-height: 15px;
@@ -585,6 +587,57 @@ a {
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 0.24px;
+}
+
+.total {
+  margin-left: 50px;
+  min-width: 300px;
+  max-height: 250px;
+  padding: 15px 15px 25px 15px;
+  background-color: #fce0e1;
+  border-radius: 10px;
+}
+.total__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.total__text {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+.total__number {
+  color: #E21616;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.48px;
+}
+.total__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(-180deg, rgb(255, 133, 113) 0%, rgb(237, 34, 40) 100%);
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.4px;
+}
+.total__descr {
+  color: #A0A0A0;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.24px;
+  text-decoration-line: underline;
 }
 
 .consult {
