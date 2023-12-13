@@ -36,6 +36,11 @@ a {
   color: black;
 }
 
+svg {
+  max-width: 24px;
+  max-height: 24px;
+}
+
 .container {
   position: relative;
   padding: 0 10px;

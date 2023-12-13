@@ -28,6 +28,11 @@ a {
   color: black;
 }
 
+svg {
+  max-width: 24px;
+  max-height: 24px;
+}
+
 .container {
   position: relative;
   padding: 0 10px;
@@ -101,10 +106,6 @@ a {
 .header__arrow {
   margin-left: 10px;
 }
-.header__icon {
-  margin-right: 10px;
-}
-
 .logo-btn {
   margin-right: 100px;
 }
@@ -373,6 +374,10 @@ a {
   color: #F2584F;
   font-weight: 500;
 }
+.service__arrow {
+  width: 10px;
+  height: 10px;
+}
 
 .about {
   padding-bottom: 50px;
@@ -493,9 +498,6 @@ a {
   /* 93.75% */
   letter-spacing: 0.64px;
 }
-.offices__location-icon {
-  width: 20px;
-}
 
 .basket .subtitle {
   margin-top: 35px;
@@ -534,8 +536,8 @@ a {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-radius: 3px;
   background: rgba(237, 34, 40, 0.26);
   cursor: pointer;
