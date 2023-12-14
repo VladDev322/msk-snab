@@ -74,6 +74,7 @@ svg {
 
 .page-path {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .slider {
@@ -85,5 +86,6 @@ svg {
 @import 'about/all';
 @import 'our-team/all';
 @import 'basket/all';
+@import 'categories/all';
 @import '_consult';
 @import '_footer';

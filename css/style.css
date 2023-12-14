@@ -66,6 +66,7 @@ svg {
 
 .page-path {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .slider {
@@ -247,10 +248,10 @@ svg {
   padding: 0px 10px;
 }
 
-.categories {
-  padding: 30px 0;
+.categories-main {
+  padding: 30px 0px;
 }
-.categories__link {
+.categories-main__link {
   display: block;
   width: 250px;
   height: 250px;
@@ -258,7 +259,7 @@ svg {
   background-color: white;
   border-radius: 5px;
 }
-.categories__text {
+.categories-main__text {
   margin-top: 25px;
   text-align: center;
 }
@@ -324,7 +325,7 @@ svg {
   transition: background-color 0.2s;
 }
 .popular__buy-btn:hover {
-  background-color: #f54b42;
+  background-color: #ED2228;
 }
 .popular__basket-text {
   margin-left: 15px;
@@ -622,7 +623,7 @@ svg {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  height: 30px;
+  height: 40px;
   color: #fff;
   text-align: center;
   background: linear-gradient(-180deg, rgb(255, 133, 113) 0%, rgb(237, 34, 40) 100%);
@@ -632,6 +633,9 @@ svg {
   line-height: 30px;
   letter-spacing: 0.4px;
 }
+.total__btn:hover {
+  background: linear-gradient(-180deg, rgb(255, 133, 113) 0%, rgb(247, 87, 79) 75%, rgb(237, 34, 40) 100%);
+}
 .total__descr {
   color: #A0A0A0;
   font-size: 12px;
@@ -640,6 +644,156 @@ svg {
   line-height: 30px;
   letter-spacing: 0.24px;
   text-decoration-line: underline;
+}
+
+.categories {
+  margin-top: 15px;
+  padding: 30px 0px;
+}
+.categories__container {
+  margin-top: 20px;
+  display: flex;
+}
+.categories__accordions {
+  align-self: flex-start;
+  max-width: 320px;
+  padding: 25px 15px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.categories__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  row-gap: 35px;
+  margin-left: 30px;
+  align-self: flex-start;
+}
+.categories__card {
+  padding: 35px 15px 15px 15px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.categories__name {
+  margin-top: 20px;
+  color: #2b3139;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.categories__btn {
+  align-self: flex-end;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background-color: #F2584F;
+  border-radius: 10px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+.categories__btn:hover {
+  background-color: #ED2228;
+}
+
+.accordion {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  color: #212529;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.accordion__header:hover {
+  background-color: #eee;
+}
+
+.accordion__content .accordion__header {
+  padding-left: 2rem;
+}
+
+.accordion__content .accordion__content .accordion__header {
+  padding-left: 3rem;
+}
+
+.accordion > .accordion__item > .accordion__header:hover {
+  background-color: #eee;
+}
+
+.accordion__header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+  transition: transform 0.2s ease-out;
+}
+
+.accordion__item_show > .accordion__header::after,
+.accordion__item_slidedown > .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.accordion__content > a {
+  position: relative;
+  display: block;
+  padding: 10px 5px;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion__content a {
+  padding-left: 2rem;
+}
+
+.accordion__content .accordion__content > a {
+  padding-left: 4rem;
+}
+
+.accordion__content .accordion__content .accordion__content > a {
+  padding-left: 4rem;
+}
+
+.accordion__body .accordion__content > a:hover {
+  background-color: #eee;
+}
+
+.accordion__item:not(.accordion__item_show) > .accordion__body {
+  display: none;
+}
+
+.no-border {
+  border: none;
 }
 
 .consult {
