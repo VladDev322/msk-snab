@@ -1,6 +1,8 @@
 $black-color: #2b3139;
 $pink-color: #fce0e1;
 $pink-hover: #fcc0c2;
+$orange-color: #f2584f;
+$red-color: #ed2228;
 $red-gradient: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(237, 34, 40, 1) 100%);
 $red-gradient-hover: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(247, 87, 79, 1) 75%, rgba(237, 34, 40, 1) 100%);
 
@@ -69,7 +71,7 @@ svg {
 }
 
 .red-text {
-  color: #ED2228;
+  color: $red-color;
 }
 
 .page-path {
@@ -87,5 +89,6 @@ svg {
 @import 'our-team/all';
 @import 'basket/all';
 @import 'categories/all';
+@import 'product/all';
 @import '_consult';
 @import '_footer';
