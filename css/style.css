@@ -65,8 +65,8 @@ svg {
 }
 
 .page-path {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .slider {
@@ -280,6 +280,7 @@ svg {
 }
 .popular__img {
   width: 75%;
+  height: 270px;
   align-self: center;
 }
 .popular__name {
@@ -299,7 +300,7 @@ svg {
 }
 .popular__pricebar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 15px;
 }
 .popular__new-price, .popular__old-price {
@@ -895,6 +896,40 @@ svg {
   transform: translateY(0);
   margin-left: 0;
   width: 120px;
+}
+
+.error {
+  margin-top: 20px;
+  padding: 72px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error__number {
+  color: #ed2228;
+  font-family: Buyan;
+  font-size: 340px;
+  font-weight: 700;
+}
+.error__description {
+  color: #2b3139;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 140%;
+}
+.error__btn {
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 165px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .consult {
