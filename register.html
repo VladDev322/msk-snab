@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Авторизация</title>
+  <title>Регистрация</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -87,19 +87,55 @@
   </section>
   <section class="auth gray-background">
     <div class="container">
-      <form action="" class="auth__wrapper" method="post">
-        <p class="auth__title">Авторизация</p>
-        <input id="mail" type="email" class="auth__input mail-svg" placeholder="E-mail" required>
-        <input id="password" type="password" class="auth__input password-svg" placeholder="Пароль" required>
-        <div class="auth__btns">
-          <button type="submit" class="auth__btn">Войти</button>
-          <a href="" class="auth__link">Забыли пароль?</a>
+      <div class="auth__wrapper">
+
+        <p class="auth__title">Регистрация</p>
+        <div class="register__menu">
+          <p class="register__menu-link register__menu-link--active" data-face="fiz">Физ. Лицо</p>
+          <p class="register__menu-link" data-face="yur">Юр. Лицо</p>
         </div>
-        <p class="auth__description">Нет аккаунта?</p>
-        <a href="" class="auth__link">Зарегистрироваться</a>
-      </form>
+
+        <form action="" class="auth__form auth__form--active" method="post" data-data="fiz">
+          <input id="name" name="name" type="text" class="auth__input user-svg" placeholder="Имя" required>
+          <input id="surname" name="surname" type="text" class="auth__input user-svg" placeholder="Фамилия" required>
+          <input id="phone" name="phone" type="tel" class="auth__input phone-svg" placeholder="Телефон" required>
+          <input id="email" name="email" type="email" class="auth__input mail-svg" placeholder="E-mail" required>
+          <button type="submit" class="auth__btn register__btn">Регистрация</button>
+        </form>
+
+        <form action="" class="auth__form" method="post" data-data="yur">
+          <input id="name" name="name" type="text" class="auth__input user-svg" placeholder="Имя" required>
+          <input id="surname" name="surname" type="text" class="auth__input user-svg" placeholder="Фамилия" required>
+          <input id="organisation" name="organisation" type="text" class="auth__input organisation-svg"
+            placeholder="Организация" required>
+          <input id="inn" name="inn" type="text" class="auth__input inn-svg" placeholder="ИНН" required>
+          <input id="phone" name="phone" type="tel" class="auth__input phone-svg" placeholder="Телефон" required>
+          <input id="email" name="email" type="email" class="auth__input mail-svg" placeholder="E-mail" required>
+          <input id="work" name="work" type="text" class="auth__input work-svg"
+            placeholder="Основное направление работы" required>
+
+          <div class="file-input-container auth__input requisites-svg">
+            <div class="file-input">
+              <input type="file" id="requisites" name="requisites" accept="application/pdf,application/vnd.ms-excel"
+                onchange="updateFileName()" required>
+              <p class="requisites__text" onclick="openFileInput()" id="fileNamePlaceholder">Реквизиты компании</p>
+            </div>
+            <div class="file-input-icon" onclick="openFileInput()">
+              <svg class="icon">
+                <use xlink:href="sourse/icons.svg#clip" />
+              </svg>
+            </div>
+          </div>
+
+          <button type="submit" class="auth__btn register__btn">Отправить заявку</button>
+        </form>
+
+        <p class="auth__description">Уже есть аккаунт?</p>
+        <a href="" class="auth__link">Войти</a>
+      </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer__info">
@@ -160,6 +196,9 @@
       являются объектами авторского права. Запрещается копирование, распространение или любое иное использование
       информации без предварительного согласия работодателя.</p>
   </footer>
+
+  <script src="js/registerTabs.js"></script>
+  <script src="js/registerPDF.js"></script>
 </body>
 
 </html>
