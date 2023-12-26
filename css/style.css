@@ -167,7 +167,6 @@ svg {
 
 .red-btn {
   background: linear-gradient(-180deg, rgb(255, 133, 113) 0%, rgb(237, 34, 40) 100%);
-  transition: all 2s;
 }
 .red-btn:hover {
   background: linear-gradient(-180deg, rgb(255, 133, 113) 0%, rgb(247, 87, 79) 75%, rgb(237, 34, 40) 100%);
@@ -1102,6 +1101,113 @@ svg {
 
 .requisites-svg {
   background-image: url("../sourse/svg/pdf.svg");
+}
+
+.lc {
+  padding: 30px 0px;
+}
+.lc__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.lc__orders {
+  margin-left: 36px;
+  width: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.lc__order {
+  margin-bottom: 30px;
+  padding: 22px 45px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+}
+.lc__order:hover {
+  box-shadow: 2px 4px 32px 6px rgba(54, 58, 69, 0.2);
+}
+
+.order {
+  color: #333;
+  font-size: 16px;
+}
+.order__number {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 152%;
+}
+.order__price {
+  color: #ed2228;
+  font-weight: 700;
+  line-height: 150%;
+}
+.order__amount {
+  color: #333;
+  font-weight: 400;
+  line-height: 130%;
+  opacity: 0.6;
+}
+.order__button {
+  display: block;
+  margin-top: 33px;
+  padding: 9px 29px;
+  color: white;
+  border-radius: 100px;
+}
+.order__status {
+  padding: 3px 15px;
+  color: white;
+  background-color: #ed2228;
+  border-radius: 100px;
+}
+.order__date {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.user {
+  display: flex;
+  padding: 30px 22px;
+  margin-bottom: 38px;
+  max-width: 350px;
+  max-height: 180px;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+}
+.user__name {
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+}
+.user__block {
+  margin-top: 10px;
+  display: flex;
+}
+.user__photo {
+  position: relative;
+}
+.user__avatar-icon {
+  position: absolute;
+  right: 0px;
+  top: 5px;
+  background-color: #FAFAFA;
+  border-radius: 100px;
+  border: 1px solid #EAEDF0;
+  cursor: pointer;
+}
+.user__info {
+  margin-left: 20px;
+}
+.user__text {
+  margin-left: 5px;
+  color: #1A1A1A;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .consult {

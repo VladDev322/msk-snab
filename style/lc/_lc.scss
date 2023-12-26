@@ -1,0 +1,123 @@
+.lc {
+  padding: 30px 0px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__orders {
+    margin-left: 36px;
+    width: 100%;
+    user-select: none;
+  }
+
+  &__order {
+    margin-bottom: 30px;
+    padding: 22px 45px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+
+    &:hover {
+      box-shadow: 2px 4px 32px 6px rgba(54, 58, 69, 0.20);
+    }
+  }
+}
+
+.order {
+  color: #333;
+  font-size: 16px;
+
+  &__number {
+    // color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 152%;
+  }
+
+  &__price {
+    color: $red-color;
+    // font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+  }
+
+  &__amount {
+    color: #333;
+    // font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    opacity: 0.6;
+  }
+
+  &__button {
+    display: block;
+    margin-top: 33px;
+    padding: 9px 29px;
+    color: white;
+    border-radius: 100px;
+  }
+
+  &__status {
+    padding: 3px 15px;
+    color: white;
+    background-color: $red-color;
+    border-radius: 100px;
+  }
+
+  &__date {
+    margin-top: 10px;
+    text-align: right;
+  }
+}
+
+.user {
+  display: flex;
+  padding: 30px 22px;
+  margin-bottom: 38px;
+  max-width: 350px;
+  max-height: 180px;
+  border-radius: 30px;
+  background: #FFF;
+  box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
+
+  &__name {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__block {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  &__photo {
+    position: relative;
+  }
+
+  &__avatar-icon {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-color: #FAFAFA;
+    border-radius: 100px;
+    border: 1px solid #EAEDF0;
+    cursor: pointer;
+  }
+
+  &__info {
+    margin-left: 20px;
+  }
+
+  &__text {
+    margin-left: 5px;
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+}
