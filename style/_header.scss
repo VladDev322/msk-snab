@@ -23,6 +23,8 @@
 
   &__bottom {
     padding-top: 10px;
+    justify-content: space-between;
+    max-width: 500px;
   }
 
   &__button {
@@ -30,8 +32,12 @@
     border-radius: 4px;
   }
 
-  &__block {
-    margin-right: 40px;
+  &__text {
+    transition: color 0.1s;
+  }
+
+  &__text:hover {
+    color: $red-color;
   }
 
   &__arrow {
@@ -141,3 +147,43 @@
     }
   }
 }
+
+
+.dropbtn {
+  display: flex;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.1s;
+
+  &:hover {
+    color: $red-color;
+  }
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}

@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="" class="logo-btn">
+      <a href="index.html" class="logo-btn">
         <img src="sourse/img/logo.png" alt="logo" class="logo">
       </a>
       <div class="header__container">
@@ -40,22 +40,19 @@
           </a>
         </nav>
         <nav class="header__bottom">
-          <a href="" class="header__block">
-            <p class="header__text">Компания</p>
-            <svg class="header__arrow">
-              <use xlink:href="sourse/icons.svg#arrow" />
-            </svg>
-          </a>
-          <a href="" class="header__block">
-            <p class="header__text">Партнеры</p>
-          </a>
-          <a href="" class="header__block">
+          <div class="header__block">
+            <div class="dropdown">
+              <p class="dropbtn">Компания</p>
+              <div class="dropdown-content">
+                <a href="">О нас</a>
+                <a href="">Наша команда</a>
+              </div>
+            </div>
+          </div>
+          <a href="index.html#service" class="header__block">
             <p class="header__text">Услуги</p>
-            <svg class="header__arrow">
-              <use xlink:href="sourse/icons.svg#arrow" />
-            </svg>
           </a>
-          <a href="" class="header__block">
+          <a href="#footer" class="header__block">
             <p class="header__text">Контакты</p>
           </a>
           <a href="" class="header__block">
@@ -123,31 +120,36 @@
           <div class="swiper-slide">
             <a href="" class="categories-main__link">
               <img src="sourse/img/category-slider.png" alt="" class="categories-main__img">
-              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения</p>
+              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения
+              </p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" class="categories-main__link">
               <img src="sourse/img/category-slider.png" alt="" class="categories-main__img">
-              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения</p>
+              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения
+              </p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" class="categories-main__link">
               <img src="sourse/img/category-slider.png" alt="" class="categories-main__img">
-              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения</p>
+              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения
+              </p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" class="categories-main__link">
               <img src="sourse/img/category-slider.png" alt="" class="categories-main__img">
-              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения</p>
+              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения
+              </p>
             </a>
           </div>
           <div class="swiper-slide">
             <a href="" class="categories-main__link">
               <img src="sourse/img/category-slider.png" alt="" class="categories-main__img">
-              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения</p>
+              <p class="categories-main__text">Полипропиленовые и PEX-a трубы и фитинги для отопления и водоснабжения
+              </p>
             </a>
           </div>
         </div>
@@ -242,7 +244,7 @@
   </section>
   <section class="service gray-background">
     <div class="container">
-      <h2 class="subtitle">также мы предоставляем услуги</h2>
+      <h2 id="service" class="subtitle">также мы предоставляем услуги</h2>
       <p class="subtext">У нас в наличии все образцы материалов, комплектующих и автоматики</p>
       <div class="service__container">
         <div class="service__card">
@@ -313,7 +315,7 @@
       </form>
     </div>
   </section>
-  <footer class="footer gray-background">
+  <footer id="footer" class="footer gray-background">
     <div class="container footer__container">
       <div class="footer__info">
         <h2 class="subtitle">наши контакты</h2>
@@ -365,10 +367,13 @@
         </div>
       </div>
       <div class="footer__map">
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1981593cb5502a9f6b3cfea59a527a8422a942e65a34d94db8ab90d4a3a1e97e&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <script type="text/javascript" charset="utf-8" async
+          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1981593cb5502a9f6b3cfea59a527a8422a942e65a34d94db8ab90d4a3a1e97e&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </div>
-    <p class="container copyright">©2008-2021г. ВСЕ ПРАВА ЗАЩИЩЕНЫ. МЕГАСТРОЙКОМПЛЕКС Все материалы данного сайта являются объектами авторского права. Запрещается копирование, распространение или любое иное использование информации без предварительного согласия работодателя.</p>
+    <p class="container copyright">©2008-2021г. ВСЕ ПРАВА ЗАЩИЩЕНЫ. МЕГАСТРОЙКОМПЛЕКС Все материалы данного сайта
+      являются объектами авторского права. Запрещается копирование, распространение или любое иное использование
+      информации без предварительного согласия работодателя.</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

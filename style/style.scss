@@ -20,6 +20,10 @@ $red-gradient-hover: linear-gradient(-180deg, rgba(255, 133, 113, 1) 0%, rgba(24
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'SFProDisplay';
   font-weight: normal;
