@@ -1103,21 +1103,21 @@ svg {
   background-image: url("../sourse/svg/pdf.svg");
 }
 
-.lc {
+.lk {
   padding: 30px 0px;
 }
-.lc__wrapper {
+.lk__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.lc__orders {
+.lk__orders {
   margin-left: 36px;
   width: 100%;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.lc__order {
+.lk__order {
   margin-bottom: 30px;
   padding: 22px 45px;
   display: flex;
@@ -1126,7 +1126,7 @@ svg {
   background: #FFF;
   box-shadow: 1px 2px 16px 3px rgba(54, 58, 69, 0.08);
 }
-.lc__order:hover {
+.lk__order:hover {
   box-shadow: 2px 4px 32px 6px rgba(54, 58, 69, 0.2);
 }
 
@@ -1208,6 +1208,9 @@ svg {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+}
+.user__link:hover {
+  color: #fc7272;
 }
 
 .consult {

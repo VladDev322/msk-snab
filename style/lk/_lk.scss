@@ -1,4 +1,4 @@
-.lc {
+.lk {
   padding: 30px 0px;
 
   &__wrapper {
@@ -119,5 +119,9 @@
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
+  }
+
+  &__link:hover {
+    color: #fc7272;
   }
 }
