@@ -645,6 +645,11 @@ svg {
   margin-top: 10px;
 }
 
+@media (max-width: 767px) {
+  .about__text {
+    margin-top: 20px;
+  }
+}
 .objects {
   padding: 33px 0px;
 }
@@ -665,6 +670,31 @@ svg {
   gap: 50px 35px;
 }
 
+@media (max-width: 1100px) {
+  .objects__container {
+    grid-template-columns: repeat(2, 350px);
+    justify-items: center;
+    justify-content: center;
+  }
+  .objects__text {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .objects__container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
+@media (max-width: 367px) {
+  .objects__card {
+    max-width: 300px;
+    width: 90%;
+  }
+  .objects__img {
+    width: 100%;
+  }
+}
 .standarts {
   padding: 50px 0px 25px 0px;
 }
@@ -1596,5 +1626,8 @@ svg {
 @media (max-width: 601px) {
   .footer__map {
     display: none;
+  }
+  .copyright {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
