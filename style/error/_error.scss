@@ -8,14 +8,15 @@
   &__number {
     color: $red-color;
     font-family: Buyan;
-    font-size: 340px;
+    font-size: 50vw;
     font-weight: 700;
+    text-align: center;
   }
 
   &__description {
     color: $black-color;
     text-align: center;
-    font-size: 24px;
+    font-size: 5vw;
     font-weight: 400;
     line-height: 140%;
   }
