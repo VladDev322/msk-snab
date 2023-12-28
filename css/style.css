@@ -1700,6 +1700,28 @@ svg {
   color: #fc7272;
 }
 
+@media (max-width: 767px) {
+  .lk__wrapper {
+    display: block;
+  }
+  .lk__user {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max(50%, 500px);
+  }
+  .lk__orders {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max(50%, 500px);
+  }
+  .lk__order {
+    margin-bottom: 5px;
+    padding: 15px;
+  }
+}
 .consult {
   padding: 30px 0px;
 }
