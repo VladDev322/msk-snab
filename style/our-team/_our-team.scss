@@ -53,3 +53,49 @@
     letter-spacing: 0.64px;
   }
 }
+
+@media (max-width: 1100px) {
+  .our-team__img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 676px) {
+
+  .our-team__info {
+    margin-left: 20px;
+  }
+
+  .our-team__img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .our-team__position,
+  .our-team__data-block {
+    margin-top: 5px;
+  }
+
+  .our-team__name {
+    font-size: 22px;
+  }
+
+  .our-team__position,
+  .our-team__data {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .our-team__name {
+    font-size: 16px;
+  }
+
+  .our-team__position,
+  .our-team__data {
+    font-size: 12px;
+  }
+}
