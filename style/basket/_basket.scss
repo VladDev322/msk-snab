@@ -28,6 +28,7 @@
     font-weight: 400;
     line-height: 15px;
     letter-spacing: 0.28px;
+    text-align: center;
   }
 
   &__price {
@@ -97,6 +98,7 @@
   }
 
   &__stock {
+    text-align: center;
     transform: translateY(20px);
     color: #A0A0A0;
     font-size: 12px;
@@ -163,5 +165,72 @@
     line-height: 30px;
     letter-spacing: 0.24px;
     text-decoration-line: underline;
+  }
+}
+
+@media (max-width: 1100px) {
+
+  .basket {
+    &__container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__total {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 676px) {
+
+  .basket {
+    &__id {
+      margin-top: 20px;
+    }
+
+    &__product {
+      margin-top: 20px;
+      margin-right: auto;
+      margin-left: auto;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      position: relative;
+    }
+
+    &__img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    &__name {
+      margin-top: 10px;
+      font-size: 17px;
+    }
+
+    &__price {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    &__icon-block {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    &__total {
+      margin-bottom: 20px;
+    }
+  }
+
+  .quantity {
+    width: 50%;
+
+    &__stock {
+      font-size: 18px;
+      line-height: normal;
+    }
   }
 }
