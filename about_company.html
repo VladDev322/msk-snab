@@ -9,6 +9,32 @@
 </head>
 
 <body>
+  <div class="dark-screen"></div>
+  <nav class="burger__menu">
+    <ul class="burger__menu__ul">
+      <li class="burger__menu-item">
+        <svg class="header__icon">
+          <use xlink:href="sourse/icons.svg#user" />
+        </svg>
+        <a href="#footer" class="burger__menu-link">Личный кабинет</a>
+      </li>
+      <li class="burger__menu-item">
+        <svg class="header__icon">
+          <use xlink:href="sourse/icons.svg#phone" />
+        </svg>
+        <a href="" class="burger__menu-link">+7 (918) 600 54 68</a>
+      </li>
+      <li class="burger__menu-item">
+        <svg class="header__icon">
+          <use xlink:href="sourse/icons.svg#mail" />
+        </svg>
+        <a href="" class="burger__menu-link">msk@msk-snab.com</a>
+      </li>
+      <li class="burger__menu-item">
+        <div class="header__button pink-btn burger__menu-link burger__menu-btn">Заказать звонок</div>
+      </li>
+    </ul>
+  </nav>
   <div class="container">
     <header class="header">
       <a href="index.html" class="logo-btn">
@@ -36,6 +62,13 @@
               <use xlink:href="sourse/icons.svg#user" />
             </svg>
             <p class="header__text">Личный кабинет</p>
+          </a>
+          <a class="header__burger">
+            <div class="header__burger__container">
+              <div class="header__burger__strip"></div>
+              <div class="header__burger__strip"></div>
+              <div class="header__burger__strip"></div>
+            </div>
           </a>
         </nav>
         <nav class="header__bottom">
@@ -65,20 +98,20 @@
   <section class="search">
     <div class="container search__container">
       <a href="" class="search__catalog-btn red-btn">
-        <div class="burger">
-          <div class="burger__stripe"></div>
-          <div class="burger__stripe"></div>
-          <div class="burger__stripe"></div>
+        <div class="search__icon">
+          <div class="search__stripe"></div>
+          <div class="search__stripe"></div>
+          <div class="search__stripe"></div>
         </div>
         <p class="search__catalog-text">КАТАЛОГ</p>
       </a>
       <input type="text" class="search__input" placeholder="Поиск по бренду, названию или артикулу">
-      <a href="" class="search__find-btn red-btn">Найти</a>
+      <a href="" class="search__find-btn pink-btn"> <span class="search__find-text">Найти</span></a>
       <a href="" class="search__basket-btn pink-btn">
         <svg class="search__basket-icon">
           <use xlink:href="sourse/icons.svg#basket" />
         </svg>
-        Корзина
+        <span class="search__basket-text">Корзина</span>
       </a>
     </div>
   </section>
@@ -258,6 +291,7 @@
   </footer>
   <script src="js/inputmask.min.js"></script>
   <script src="js/validation.js"></script>
+  <script src="js/headerBurger.js"></script>
 </body>
 
 </html>

@@ -78,6 +78,23 @@ svg {
   color: $red-color;
 }
 
+.red-btn {
+  background: $red-gradient;
+
+  &:hover {
+    background: $red-gradient-hover;
+  }
+}
+
+.pink-btn {
+  transition: background-color 0.2s;
+  background: $pink-color;
+
+  &:hover {
+    background: $pink-hover;
+  }
+}
+
 .page-path {
   margin-top: 20px;
   margin-bottom: 20px;
