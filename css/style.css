@@ -393,7 +393,7 @@ svg {
     margin-top: 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .search__input {
     background-image: none;
     padding-left: 5px;
@@ -1349,6 +1349,9 @@ svg {
   .product__price-container {
     margin-top: 10px;
   }
+  .product__tab {
+    font-size: 14px;
+  }
   .product .popular__old-price {
     font-size: 37px;
   }
@@ -1358,9 +1361,6 @@ svg {
   .product .categories__cards {
     -moz-column-gap: 10px;
          column-gap: 10px;
-  }
-  .product__tab {
-    font-size: 14px;
   }
 }
 @media (max-width: 550px) {
@@ -1576,6 +1576,20 @@ svg {
   background-image: url("../sourse/svg/pdf.svg");
 }
 
+@media (max-width: 676px) {
+  .auth {
+    padding: 20px 0px;
+  }
+  .auth__wrapper {
+    padding: 15px;
+  }
+  .auth__btn {
+    min-width: unset;
+  }
+  .auth__link {
+    text-align: center;
+  }
+}
 .lk {
   padding: 30px 0px;
 }

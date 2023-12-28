@@ -188,3 +188,21 @@
 .requisites-svg {
   background-image: url("../sourse/svg/pdf.svg");
 }
+
+@media (max-width: 676px) {
+  .auth {
+    padding: 20px 0px;
+
+    &__wrapper {
+      padding: 15px;
+    }
+
+    &__btn {
+      min-width: unset;
+    }
+
+    &__link {
+      text-align: center;
+    }
+  }
+}
