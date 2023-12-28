@@ -84,3 +84,28 @@
     font-weight: 500;
   }
 }
+
+@media (max-width: 640px) {
+  .popular__link {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .popular__new-price {
+    font-size: 25px;
+  }
+
+  .popular__old-price {
+    font-size: 22px;
+  }
+
+  .popular__text {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .popular__img {
+    height: 100%;
+  }
+}

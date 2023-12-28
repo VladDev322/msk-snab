@@ -15,3 +15,15 @@
     text-align: center;
   }
 }
+
+@media (max-width: 1400px) {
+  .left-arrow {
+    left: 0;
+  }
+
+  .right-arrow {
+    right: 0;
+  }
+}
+
+

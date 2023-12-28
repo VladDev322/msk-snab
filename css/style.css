@@ -468,6 +468,14 @@ svg {
   text-align: center;
 }
 
+@media (max-width: 1400px) {
+  .left-arrow {
+    left: 0;
+  }
+  .right-arrow {
+    right: 0;
+  }
+}
 .popular {
   padding: 30px 0px 5px 0px;
   color: #2b3139;
@@ -541,6 +549,26 @@ svg {
   font-weight: 500;
 }
 
+@media (max-width: 640px) {
+  .popular__link {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .popular__new-price {
+    font-size: 25px;
+  }
+  .popular__old-price {
+    font-size: 22px;
+  }
+  .popular__text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .popular__img {
+    height: 100%;
+  }
+}
 .service {
   padding: 30px 0px;
 }
@@ -585,6 +613,25 @@ svg {
   height: 10px;
 }
 
+@media (max-width: 976px) {
+  .service__container {
+    grid-template-columns: 1fr;
+  }
+  .service__card {
+    display: block;
+    text-align: center;
+  }
+  .service__link {
+    margin-top: 10px;
+  }
+  .service__img {
+    width: min(500px, 100%);
+  }
+  .service__name {
+    margin-top: 10px;
+    font-size: 22px;
+  }
+}
 .about {
   padding-bottom: 50px;
 }
@@ -1532,4 +1579,22 @@ svg {
 .footer .copyright {
   margin-top: 100px;
   text-align: center;
+}
+
+@media (max-width: 976px) {
+  .footer__container {
+    display: block;
+  }
+  .footer__info {
+    margin: 0 auto;
+  }
+  .footer__map {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 601px) {
+  .footer__map {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

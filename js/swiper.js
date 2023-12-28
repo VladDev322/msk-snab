@@ -23,11 +23,25 @@ const swiper2 = new Swiper('.swiper-2', {
     prevEl: '.swiper-button-prev-2',
   },
 
-  slidesPerView: 4,
   spaceBetween: 10,
 
   autoplay: {
     delay: 3000,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
   },
 });
 
@@ -41,10 +55,24 @@ const swiper3 = new Swiper('.swiper-3', {
     prevEl: '.swiper-button-prev-3',
   },
 
-  slidesPerView: 3,
   spaceBetween: 50,
 
   autoplay: {
     delay: 3000,
+  },
+
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });
