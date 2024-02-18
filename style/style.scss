@@ -104,6 +104,37 @@ svg {
   padding-bottom: 50px;
 }
 
+.modal {
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 25%;
+  z-index: 1000;
+  width: min(400px, 70%);
+  padding: 45px 52px 54px 52px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  color: $black-color;
+  outline: 1px solid black;
+
+  &__text {
+    margin-top: 10px;
+    font-family: Buyan;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 14px;
+    font-size: 18px;
+  }
+}
+
+
 @import '_header';
 @import 'main/all';
 @import 'about/all';
