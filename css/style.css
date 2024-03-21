@@ -541,6 +541,7 @@ svg {
 .popular__pricebar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-top: 15px;
 }
 .popular__new-price, .popular__old-price {
@@ -1083,6 +1084,20 @@ svg {
   row-gap: 35px;
   margin-left: 30px;
   align-self: flex-start;
+}
+.categories__new-price, .categories__old-price {
+  font-family: Buyan;
+  line-height: 130%;
+  /* 54.6px */
+}
+.categories__new-price {
+  font-size: 25px;
+}
+.categories__old-price {
+  margin-left: 7px;
+  opacity: 0.6;
+  font-size: 20px;
+  text-decoration: line-through;
 }
 .categories__card {
   padding: 35px 15px 15px 15px;
